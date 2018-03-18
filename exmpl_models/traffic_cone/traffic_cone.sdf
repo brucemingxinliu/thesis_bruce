@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<sdf version='1.4'>
+  <model name="traffic_cone">
+    <link name='link'>
+      <pose>0.0 0 0.0 0 0 0</pose>
+      <inertial>
+        <mass>0.1</mass>
+        <inertia>
+          <ixx>0.01</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.01</iyy>
+          <iyz>0</iyz>
+          <izz>0.01</izz>
+        </inertia>
+      </inertial>
+         <collision>
+           <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+        	<box size="0.1 0.1 0.1"/>
+            </geometry>
+         </collision>
+
+      <visual name='visual'>
+        <geometry>
+            <mesh filename="$(find exmpl_models)/traffic_cone/mesh/traffic_cone.stl"/>
+        </geometry>
+      </visual>
+    </link>     
+  </model>
+</sdf>
